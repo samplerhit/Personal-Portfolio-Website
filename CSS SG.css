@@ -1,0 +1,103 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Home Page */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 2.5em;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+/* About Me Section */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#about .bio {
+    flex: 1;
+    padding: 20px;
+}
+
+#about .skills {
+    flex: 1;
+    padding: 20px;
+}
+
+.icon {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+/* Projects Section */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+    
+    #about {
+        flex-direction: column;
+    }
+}
